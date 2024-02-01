@@ -42,7 +42,7 @@ public class SpellChecker {
 		{
 			if (word.charAt(i) > 'A' && word.charAt(i) < 'Z')
 			{
-				lowerWord += (char)(word.charAt(i) - 32);
+				lowerWord += (char)(word.charAt(i) + 32);
 			}
 			else
 			{
