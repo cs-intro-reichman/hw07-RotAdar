@@ -59,7 +59,7 @@ public class HashTagTokenizer {
 		{
 			if (hashtag.charAt(i) > 'A' && hashtag.charAt(i) < 'Z')
 			  {
-				  lowerHash += (char)(hashtag.charAt(i) - 32);
+				  lowerHash += (char)(hashtag.charAt(i) + 32);
 			  }
 			else
 			{
