@@ -66,7 +66,7 @@ public class SpellChecker {
 	public static String spellChecker(String word, int threshold, String[] dictionary) {
 		// Return the most similar word from the dictionary, in maximun thredsold value.
 		// If there isn't such a word, return the original word
-		for ( int j = 0; j < threshold; j++) {
+		for ( int j = 0; j <= threshold; j++) {
 			for (int i = 0; i < dictionary.length; i++) {
 				if (levenshtein(dictionary[i], word) == j) {
 					return dictionary[i];
