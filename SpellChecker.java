@@ -68,7 +68,7 @@ public class SpellChecker {
 		// If there isn't such a word, return the original word
 		for ( int j = 0; j <= threshold; j++) {
 			for (int i = 0; i < dictionary.length; i++) {
-				if (levenshtein(dictionary[i], word) == j) {
+				if (levenshtein(dictionary[i], lowerCase(word)) == j) {
 					return dictionary[i];
 				}
 			}
