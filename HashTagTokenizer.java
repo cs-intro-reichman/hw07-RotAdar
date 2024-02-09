@@ -28,9 +28,13 @@ public class HashTagTokenizer {
 		{
 			if (word.equals(dictionary[i]))
 			{
+				/* why not return true here?
+				imagine that word = 'a' then at the first iteration exist becomes true
+				and then there are 2999 iterations for nothing */
 				exist = true;
 			}
 		}
+		// and if i got to this line it means that not found and return false.
 		return exist;
 	}
 
